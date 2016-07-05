@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Missing PersonsVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MissingPersonsVC" customModule="MissingPersons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neE-uH-Rz1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missing persons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCO-vC-V1p">
+                                        <rect key="frame" x="96" y="32" width="128" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="M0M-hw-BkC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.38833128203960288" green="0.60623751497355682" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aCO-vC-V1p" firstAttribute="centerX" secondItem="neE-uH-Rz1" secondAttribute="centerX" id="1bJ-2e-Rmx"/>
+                                    <constraint firstAttribute="bottom" secondItem="aCO-vC-V1p" secondAttribute="bottom" constant="8" id="CfB-iW-Hyx"/>
+                                    <constraint firstAttribute="height" constant="61" id="bV8-2B-tg1"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8od-OQ-DQt">
+                                <rect key="frame" x="0.0" y="69" width="320" height="144"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="bH0-16-Ezv"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9ZE-vJ-uPi">
+                                    <size key="itemSize" width="188" height="139"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonCell" id="FqI-TG-cJC" customClass="PersonCell" customModule="MissingPersons" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="3" width="188" height="139"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="188" height="139"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oev-Ux-ol9">
+                                                    <rect key="frame" x="8" y="8" width="172" height="123"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="oev-Ux-ol9" firstAttribute="top" secondItem="FqI-TG-cJC" secondAttribute="topMargin" id="Jag-bg-AEr"/>
+                                            <constraint firstItem="oev-Ux-ol9" firstAttribute="leading" secondItem="FqI-TG-cJC" secondAttribute="leadingMargin" id="Y8u-pv-dhi"/>
+                                            <constraint firstItem="oev-Ux-ol9" firstAttribute="trailing" secondItem="FqI-TG-cJC" secondAttribute="trailingMargin" id="dle-kg-UbQ"/>
+                                            <constraint firstItem="oev-Ux-ol9" firstAttribute="bottom" secondItem="FqI-TG-cJC" secondAttribute="bottomMargin" id="mwg-2f-Xvi"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="personImage" destination="oev-Ux-ol9" id="XzC-Hw-u7b"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="hd4-7v-tOm">
+                                <rect key="frame" x="91" y="237" width="138" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="7A2-vz-tEg"/>
+                                    <constraint firstAttribute="height" constant="138" id="cDd-MW-BuS"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgL-lf-iE7">
+                                <rect key="frame" x="66" y="436" width="188" height="47"/>
+                                <color key="backgroundColor" red="0.388331282" green="0.606237515" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="6WU-ox-obs"/>
+                                    <constraint firstAttribute="height" constant="47" id="PJr-aM-Dfd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="CHECK FOR MATCH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkMatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7P7-Kh-DHv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EgL-lf-iE7" secondAttribute="bottom" constant="85" id="7Lw-0u-VF1"/>
+                            <constraint firstItem="8od-OQ-DQt" firstAttribute="top" secondItem="neE-uH-Rz1" secondAttribute="bottom" constant="8" id="Neb-IO-FsX"/>
+                            <constraint firstItem="neE-uH-Rz1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QpD-At-KF3"/>
+                            <constraint firstItem="neE-uH-Rz1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UDt-HO-xt1"/>
+                            <constraint firstItem="hd4-7v-tOm" firstAttribute="top" secondItem="8od-OQ-DQt" secondAttribute="bottom" constant="24" id="gRp-28-8y1"/>
+                            <constraint firstAttribute="trailing" secondItem="8od-OQ-DQt" secondAttribute="trailing" id="nB8-Wc-Svp"/>
+                            <constraint firstAttribute="trailing" secondItem="neE-uH-Rz1" secondAttribute="trailing" id="pfR-Jy-ydu"/>
+                            <constraint firstItem="hd4-7v-tOm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rvH-Gr-ml7"/>
+                            <constraint firstItem="8od-OQ-DQt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vDd-ua-lXb"/>
+                            <constraint firstItem="EgL-lf-iE7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yRy-bE-psb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="collectionView" destination="8od-OQ-DQt" id="q4Q-bG-hVg"/>
+                        <outlet property="selectedImg" destination="hd4-7v-tOm" id="FtI-lC-dZZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360" y="400"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="385" height="377"/>
+    </resources>
+</document>
